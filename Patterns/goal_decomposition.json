@@ -1,0 +1,123 @@
+{
+	"metadata": {
+		"children": {},
+		"name": "goal_decomposition",
+		"parents": {},
+		"placeholders": {
+			"system": "S",
+			"highlevel_requirement": "Y",
+			"sub_requirement": "R",
+			"operating_condition": "C",
+			"operating_environment": "E",
+			"system_goals": "SG",
+			"system_requirement": "SR"
+		},
+		"score": 0.0
+	},
+	"pattern": {
+		"children":[
+			{
+		"children": [
+			{
+		"children":[
+			{
+			"children":[
+			{
+				"children":[
+					{
+						"children":[
+							{
+								"class": "goal",
+								"content": "The highlevel-requirement {Y} associated with the system requirement {SR} is satisfied",
+								"identifier": "G4",
+								"is_defeater": false,
+								"multiplicity": "n:Y:SR",
+								"children":[],
+								"modifiers": ["instantiate"]
+							},
+							{
+								"class": "justification",
+								"content": "System has certain high level requirements that needs to satisfy for the system goals to work satisfactorily",
+								"identifier": "J2",
+								"children": [],
+								"multiplicity": "1",
+								"modifiers": []
+							}
+						],
+						"class": "strategy",
+						"content": "Argument through decomposing system requirements to highlevel requirements",
+						"identifier": "S3",
+						"multiplicity": "1",
+						"modifiers": []
+					}
+				],
+				"class": "goal",
+				"content": "The system-requirement {SR} associated with the goal {SG} is satisfied",
+				"identifier": "G3",
+				"is_defeater": false,
+				"multiplicity": "n:SR:SG",
+				"modifiers": ["instantiate"]
+			},
+			{
+				"class": "justification",
+				"content": "System has certain requirements that needs to satisfy for the system goals to work satisfactorily",
+				"identifier": "J1",
+				"children": [],
+				"multiplicity": "1",
+				"modifiers": []
+			}
+			],
+			"class": "strategy",
+			"content": "Argument through system requirement satisfaction",
+			"identifier": "S2",
+			"multiplicity": "1",
+			"modifiers": []
+			}
+		  ],
+				"class": "goal",
+				"content": "system-level goal {SG} is satisfied",
+				"identifier": "G2",
+				"is_defeater": false,
+				"multiplicity": "n:SG:S",
+				"modifiers": ["instantiate"]
+			}
+			],
+				"class": "strategy",
+				"content": "Argument through systemlevel goal decomposition",
+				"identifier": "S1",
+				"multiplicity": "1",
+				"modifiers": []
+			},
+			{
+				"class": "context",
+				"content": "Operating Environment is [{E}]",
+				"identifier": "C3",
+				"children": [],
+				"multiplicity": "1",
+				"modifiers": ["instantiate"]
+			},
+			{
+				"class": "context",
+				"content": "Operating Conditions are [{C}]",
+				"identifier": "C2",
+				"children": [],
+				"multiplicity": "1",
+				"modifiers": ["instantiate"]
+			},
+			{
+				"class": "context",
+				"content": "{S} System under consideration",
+				"identifier": "C1",
+				"children": [],
+				"multiplicity": "1",
+				"modifiers": ["instantiate"]
+			}
+		],
+		"class": "goal",
+		"content": "System {S} will satisfactorily perform the systemlevel goals under the indicated operating conditions",
+		"identifier": "G1",
+		"is_defeater": false,
+		"modifiers": ["instantiate"]
+	}
+
+}

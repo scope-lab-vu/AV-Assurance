@@ -1,0 +1,130 @@
+{
+"metadata":{
+  "children": {},
+  "name": "architecture_decomposition",
+  "parents": {},
+  "placeholders": {
+    "system": "S",
+    "operating_condition": "C",
+    "operating_environment": "E",
+    "subsystem": "SS",
+    "subsystem_components": "SC",
+    "subsystem_components_efficiency": "SCE",
+    "subsystem_components_redundancy": "SCR"
+  },
+  "score": 0.0
+},
+"pattern":{
+      "children":[
+        {
+          "children":[
+            {
+              "children":[
+              {
+                "children":[
+                {
+                  "children":[
+                  {
+                    "children":[
+                      {
+                      "class": "solution",
+                      "content": "Component has redundancy {SCR}",
+                      "identifier": "E2",
+                      "children": [],
+                      "multiplicity": "n:SCR:SC",
+                      "modifiers": ["instantiate"]
+                    }
+                      ],
+                      "class": "goal",
+                      "content": "Component {SC} is available, and can tolerate a failure",
+                      "identifier": "G5",
+                      "multiplicity": "1",
+                      "modifiers": ["instantiate"]
+                    },
+                    {
+                    "children":[
+                    {
+                      "class": "solution",
+                      "content": "Component {SC} executed its function {SCE} of times during testing",
+                      "identifier": "E1",
+                      "children": [],
+                      "multiplicity": "n:SCE:SC",
+                      "modifiers": ["instantiate"]
+                    }
+                    ],
+                    "class": "goal",
+      							"content": "Component {SC} will function as expected",
+      							"identifier": "G4",
+      							"multiplicity": "1",
+      							"modifiers": ["instantiate"]
+                  },
+                  {
+                    "class": "strategy",
+                    "content": "Argue by checking if the component is available and functioning as expected",
+                    "identifier": "S3",
+                    "multiplicity": "1",
+                    "modifiers": [],
+                    "children": []
+                  }
+                  ],
+                  "class": "goal",
+                  "content": "System Component {SC} is functioning satisfactorily",
+                  "identifier": "G3",
+                  "multiplicity": "n:SC:SS",
+                  "is_defeater": false,
+                  "modifiers": ["instantiate"]
+                }
+                ],
+                "class": "strategy",
+                "content": "Argue by dcomposing the subsystem {SS} to components implementing them",
+                "identifier": "S2",
+                "multiplicity": "1",
+                "modifiers": ["instantiate"]
+              }
+              ],
+              "class": "goal",
+              "content": "subsystem {SS} is operating satisfactorily to satisfy system goals",
+              "identifier": "G2",
+              "multiplicity": "n:SS:S",
+              "is_defeater": false,
+              "modifiers": ["instantiate"]
+            }
+          ],
+          "class": "strategy",
+          "content": "Argue by decomposition over the system architecture",
+          "identifier": "S1",
+          "multiplicity": "1",
+          "modifiers": []
+        },
+        {
+          "class": "Context",
+          "content": "Operating environment [{E}]",
+          "identifier": "C2",
+          "multiplicity": "1",
+          "modifiers": ["instantiate"],
+          "children": []
+        },
+        {
+          "class": "Context",
+          "content": "Operating context [{C}]",
+          "identifier": "C1",
+          "multiplicity": "1",
+          "modifiers": ["instantiate"],
+          "children": []
+        },
+        {
+          "class": "assumption",
+          "content": "System Architecture with component information is available for the system {S}",
+          "identifier": "A1",
+          "multiplicity": "1",
+          "modifiers": ["instantiate"],
+          "children": []
+        }
+    ],
+    "class": "goal",
+    "content": "System architecture functions satisfactorily to satisfy the goals of system {S}",
+    "identifier": "G1",
+    "is_defeater": false,
+    "modifiers": ["instantiate"]
+    }
+}
