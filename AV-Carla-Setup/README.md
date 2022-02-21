@@ -3,15 +3,15 @@
 This repo has the code for the Autonomous Vehicle case study setup in Carla simulation. Also, we have developed a data generation framework to generate evidence for the AV operating under different operating conditions. A sample of the anomaly detector's efficiency is available [here](https://github.com/Shreyasramakrishna90/AV-Carla-Setup/blob/main/sample-evidence/detector_efficiency.csv). In the current work, these stats are not used. However, in the future we want to use these statistics for computing the confidence scores for the assurance case. The AV system model is shown below.
 
 <p align="center">
-  <img src="https://github.com/Shreyasramakrishna90/AV-Assurance/blob/main/images/sys-model.png" />
+  <img src="https://github.com/scope-lab-vu/AV-Assurance/blob/main/images/sys-model.png" />
 </p>
 
 ## Different Testing Scenes 
 
 <p align="center">
-  <img src="https://github.com/Shreyasramakrishna90/AV-Assurance/blob/main/images/cloudy.gif" />
-  <img src="https://github.com/Shreyasramakrishna90/AV-Assurance/blob/main/images/evening.gif" />
-  <img src="https://github.com/Shreyasramakrishna90/AV-Assurance/blob/main/images/cloudy-rainy.gif" />
+  <img src="https://github.com/scope-lab-vu/AV-Assurance/blob/main/images/cloudy.gif" />
+  <img src="https://github.com/scope-lab-vu/AV-Assurance/blob/main/images/evening.gif" />
+  <img src="https://github.com/scope-lab-vu/AV-Assurance/blob/main/images/cloudy-rainy.gif" />
 </p>
 
 (Left) Cloudy Scene in an intersection. The AV also has a camera fault (camera occlusion), which makes its driving slightly suceptible. (Center) Sunset scene in a curvy road. There is another vehicle right in front of the AV. (Right) Cloudy Scene with slight rain.  
