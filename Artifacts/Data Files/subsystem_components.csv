@@ -1,0 +1,21 @@
+subsystem_components,subsystem
+left_camera,sensing subsystem
+center_camera,sensing subsystem
+right_camera,sensing subsystem
+GPS,sensing subsystem
+IMU,sensing subsystem
+Speedometer,sensing subsystem
+left_radar,sensing subsystem
+center_radar,sensing subsystem
+navigation lec,control subsystem
+emergency_braking,control subsystem
+motion estimator,control subsystem
+lateral PID,actuator subsystem
+longitudinal PID,actuator subsystem
+left_bd,detector subsystem
+center_bd,detector subsystem
+right_bd,detector subsystem
+left_od,detector subsystem
+center_od,detector subsystem
+right_od,detector subsystem
+assurance monitor,detector subsystem

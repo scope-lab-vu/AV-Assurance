@@ -1,0 +1,8 @@
+failure_modes_detectors,failure_modes
+left_bd,left_cam_blur
+center_bd,center_cam_blur
+right_bd,right_cam_blur
+left_od,left_cam_occlusion
+center_od,center_cam_occlusion
+right_od,right_cam_occlusion
+assurance_monitor,data_shift

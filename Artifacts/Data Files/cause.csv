@@ -1,0 +1,50 @@
+cause,hazard,sub_requirement
+error in accessing CARLA map,inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+error in predictions of the navigation lec,inaccurate speed value,The calculated waypoints shall be in the direction towards the destination
+error in predictions of the navigation lec,inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+left camera occluded by dust or snow,occluded image,The calculated waypoints shall be in the direction towards the destination
+left camera occluded by dust or snow,inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+left camera occluded by dust or snow,inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+center camera occluded by dust or snow,occluded image,The calculated waypoints shall be in the direction towards the destination
+center camera occluded by dust or snow,inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+center camera occluded by dust or snow,inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+right camera occluded by dust or snow,occluded image,The calculated waypoints shall be in the direction towards the destination
+right camera occluded by dust or snow,inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+right camera occluded by dust or snow,inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+left camera blurred by fog or rain,blur image ,The calculated waypoints shall be in the direction towards the destination
+left camera blurred by fog or rain,inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+left camera blurred by fog or rain,inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+center camera blurred by fog or rain,blur image,The calculated waypoints shall be in the direction towards the destination
+center camera blurred by fog or rain,inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+center camera blurred by fog or rain,inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+right camera blurred by fog or rain,blur image,The calculated waypoints shall be in the direction towards the destination
+right camera blurred by fog or rain,inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+right camera blurred by fog or rain,inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+incorrect GPS measurements,inaccurate speed value,The calculated waypoints shall be in the direction towards the destination
+incorrect GPS measurements,inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+incorrect IMU readings,inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+error in accessing CARLA map,inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+error in predictions of the navigation lec,inaccurate speed value,The distance between two subsequent waypoints will be 5 meters
+error in predictions of the navigation lec,inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+left camera occluded by dust or snow,occluded image,The distance between two subsequent waypoints will be 5 meters
+left camera occluded by dust or snow,inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+left camera occluded by dust or snow,inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+center camera occluded by dust or snow,occluded image,The distance between two subsequent waypoints will be 5 meters
+center camera occluded by dust or snow,inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+center camera occluded by dust or snow,inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+right camera occluded by dust or snow,occluded image,The distance between two subsequent waypoints will be 5 meters
+right camera occluded by dust or snow,inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+right camera occluded by dust or snow,inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+left camera blurred by fog or rain,blur image ,The distance between two subsequent waypoints will be 5 meters
+left camera blurred by fog or rain,inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+left camera blurred by fog or rain,inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+center camera blurred by fog or rain,blur image,The distance between two subsequent waypoints will be 5 meters
+center camera blurred by fog or rain,inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+center camera blurred by fog or rain,inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+right camera blurred by fog or rain,blur image,The distance between two subsequent waypoints will be 5 meters
+right camera blurred by fog or rain,inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+right camera blurred by fog or rain,inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+incorrect GPS measurements,inaccurate speed value,The distance between two subsequent waypoints will be 5 meters
+incorrect GPS measurements,inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+incorrect IMU readings,inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+rainy operating conditions causing brake to slip,inaccurate speed value,The vehicle shall apply hard brakes to stop at the safe breaking distance

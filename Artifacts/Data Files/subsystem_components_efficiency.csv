@@ -1,0 +1,21 @@
+subsystem_components_efficiency,subsystem_components
+97.20%,left_camera
+97.20%,center_camera
+97.20%,right_camera
+100.00%,GPS
+100.00%,IMU
+100.00%,Speedometer
+97.50%,left_radar
+97.50%,center_radar
+90.00%,navigation lec
+100.00%,emergency_braking
+100.00%,motion estimator
+100.00%,lateral PID
+100.00%,longitudinal PID
+100.00%,left_bd
+99.20%,center_bd
+80.40%,right_bd
+100.00%,left_od
+100.00%,center_od
+100.00%,right_od
+93.20%,assurance monitor

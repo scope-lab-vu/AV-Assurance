@@ -1,0 +1,31 @@
+{
+      "System": "AV_system",
+      "Selected Templates": [
+            "Requirement_component_dependancy.json",
+            "Component_failure_modes.json",
+            "Requirement_hazard_decomposition.json",
+            "System_goal_decomposition1.json",
+            "System_architecture_decomposition.json"
+      ],
+      "Unused Templates": [],
+      "Artifacts Unused": [
+            "system_model_documents",
+            "requirement_documents"
+      ],
+      "Artifact Coverage": "92.31%",
+      "Safety Data Coverage": [
+            {
+                  "hazard_information": {
+                        "Inclusion score": 60.0,
+                        "Mitigation score": 81.63
+                  }
+            },
+            {
+                  "failure_modes_information": {
+                        "Inclusion score": 100.0,
+                        "Mitigation score": 100.0
+                  }
+            }
+      ],
+      "Version": 1.2
+}

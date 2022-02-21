@@ -1,0 +1,50 @@
+hazard,sub_requirement
+inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+inaccurate speed value,The calculated waypoints shall be in the direction towards the destination
+inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+occluded image,The calculated waypoints shall be in the direction towards the destination
+inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+occluded image,The calculated waypoints shall be in the direction towards the destination
+inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+occluded image,The calculated waypoints shall be in the direction towards the destination
+inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+blur image ,The calculated waypoints shall be in the direction towards the destination
+inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+blur image,The calculated waypoints shall be in the direction towards the destination
+inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+blur image,The calculated waypoints shall be in the direction towards the destination
+inaccurate steer value,The calculated waypoints shall be in the direction towards the destination
+inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+inaccurate speed value,The calculated waypoints shall be in the direction towards the destination
+inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+inaccurate waypoints,The calculated waypoints shall be in the direction towards the destination
+inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+inaccurate speed value,The distance between two subsequent waypoints will be 5 meters
+inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+occluded image,The distance between two subsequent waypoints will be 5 meters
+inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+occluded image,The distance between two subsequent waypoints will be 5 meters
+inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+occluded image,The distance between two subsequent waypoints will be 5 meters
+inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+blur image ,The distance between two subsequent waypoints will be 5 meters
+inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+blur image,The distance between two subsequent waypoints will be 5 meters
+inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+blur image,The distance between two subsequent waypoints will be 5 meters
+inaccurate steer value,The distance between two subsequent waypoints will be 5 meters
+inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+inaccurate speed value,The distance between two subsequent waypoints will be 5 meters
+inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+inaccurate waypoints,The distance between two subsequent waypoints will be 5 meters
+inaccurate speed value,The vehicle shall apply hard brakes to stop at the safe breaking distance

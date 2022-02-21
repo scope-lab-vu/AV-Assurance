@@ -1,0 +1,4 @@
+system_goals,system
+The vehicle shall safely navigate between the designated source and destination,AV_system
+The vehicle shall not damage itself or other actors in its path,AV_system
+The vehicle shall traverse the destination in the shortest possible time,AV_system

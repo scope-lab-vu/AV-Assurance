@@ -1,0 +1,50 @@
+risk,cause,hazard
+Low,error in accessing CARLA map,inaccurate waypoints
+High,error in predictions of the navigation lec,inaccurate speed value
+High,error in predictions of the navigation lec,inaccurate steer value
+High,left camera occluded by dust or snow,occluded image
+High,left camera occluded by dust or snow,inaccurate steer value
+Medium,left camera occluded by dust or snow,inaccurate waypoints
+High,center camera occluded by dust or snow,occluded image
+High,center camera occluded by dust or snow,inaccurate steer value
+Medium,center camera occluded by dust or snow,inaccurate waypoints
+High,right camera occluded by dust or snow,occluded image
+High,right camera occluded by dust or snow,inaccurate steer value
+Medium,right camera occluded by dust or snow,inaccurate waypoints
+High,left camera blurred by fog or rain,blur image 
+High,left camera blurred by fog or rain,inaccurate steer value
+Medium,left camera blurred by fog or rain,inaccurate waypoints
+High,center camera blurred by fog or rain,blur image
+High,center camera blurred by fog or rain,inaccurate steer value
+Medium,center camera blurred by fog or rain,inaccurate waypoints
+High,right camera blurred by fog or rain,blur image
+High,right camera blurred by fog or rain,inaccurate steer value
+Medium,right camera blurred by fog or rain,inaccurate waypoints
+High,incorrect GPS measurements,inaccurate speed value
+Medium,incorrect GPS measurements,inaccurate waypoints
+Medium,incorrect IMU readings,inaccurate waypoints
+Low,error in accessing CARLA map,inaccurate waypoints
+High,error in predictions of the navigation lec,inaccurate speed value
+High,error in predictions of the navigation lec,inaccurate steer value
+High,left camera occluded by dust or snow,occluded image
+High,left camera occluded by dust or snow,inaccurate steer value
+Medium,left camera occluded by dust or snow,inaccurate waypoints
+High,center camera occluded by dust or snow,occluded image
+High,center camera occluded by dust or snow,inaccurate steer value
+Medium,center camera occluded by dust or snow,inaccurate waypoints
+High,right camera occluded by dust or snow,occluded image
+High,right camera occluded by dust or snow,inaccurate steer value
+Medium,right camera occluded by dust or snow,inaccurate waypoints
+High,left camera blurred by fog or rain,blur image 
+High,left camera blurred by fog or rain,inaccurate steer value
+Medium,left camera blurred by fog or rain,inaccurate waypoints
+High,center camera blurred by fog or rain,blur image
+High,center camera blurred by fog or rain,inaccurate steer value
+Medium,center camera blurred by fog or rain,inaccurate waypoints
+High,right camera blurred by fog or rain,blur image
+High,right camera blurred by fog or rain,inaccurate steer value
+Medium,right camera blurred by fog or rain,inaccurate waypoints
+High,incorrect GPS measurements,inaccurate speed value
+Medium,incorrect GPS measurements,inaccurate waypoints
+Medium,incorrect IMU readings,inaccurate waypoints
+High,rainy operating conditions causing brake to slip,inaccurate speed value

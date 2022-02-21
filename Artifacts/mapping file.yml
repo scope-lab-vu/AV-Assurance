@@ -1,0 +1,131 @@
+Data Sources:
+    CSV:
+        directory: AV_system_artifacts
+        nodegroups:
+            cause_table: [cause.csv]
+            design_documents_table: [design_documents.csv]
+            failure_mitigation_efficiency_table: [failure_mitigation_efficiency.csv]
+            failure_mitigation_table: [failure_mitigation.csv]
+            failure_modes_detectors_efficiency_table: [failure_modes_detectors_efficiency.csv]
+            failure_modes_detectors_table: [failure_modes_detectors.csv]
+            failure_modes_table: [failure_modes.csv]
+            hazard_documents_table: [hazard_documents.csv]
+            hazard_list_table: [hazard_list.csv]
+            hazard_table: [hazard.csv]
+            highlevel_requirement_table: [highlevel_requirement.csv]
+            mitigation_table: [mitigation.csv]
+            operating_condition_table: [operating_condition.csv]
+            operating_environment_table: [operating_environment.csv]
+            related_components_table: [related_components.csv]
+            requirement_documents_table: [requirement_documents.csv]
+            requirements_table: [requirements.json]
+            risk_table: [risk.csv]
+            sub_requirement_table: [sub_requirement.csv]
+            subsystem_components_efficiency_table: [subsystem_components_efficiency.csv]
+            subsystem_components_redundancy_table: [subsystem_components_redundancy.csv]
+            subsystem_components_table: [subsystem_components.csv]
+            subsystem_table: [subsystem.csv]
+            system_goals_table: [system_goals.csv]
+            system_model_documents_table: [system_model_documents.csv]
+            system_requirement_table: [system_requirement.csv]
+            system_table: [system.csv]
+            tag_file_table: [tag_file.json]
+Dependency Mapping:
+  - [subsystem, subsystem_table, system]
+  - [related_components, related_components_table, sub_requirement]
+  - [subsystem_components_redundancy, subsystem_components_redundancy_table, subsystem_components]
+  - [system_goals, system_goals_table, system]
+  - [system_requirement, system_requirement_table, system_goals]
+  - [failure_mitigation, failure_mitigation_table, failure_modes]
+  - [failure_modes, failure_modes_table, subsystem_components]
+  - [subsystem_components, subsystem_components_table, subsystem]
+  - [mitigation, mitigation_table, cause]
+  - [mitigation, mitigation_table, hazard]
+  - [sub_requirement, sub_requirement_table, highlevel_requirement]
+  - [highlevel_requirement, highlevel_requirement_table, system_requirement]
+  - [subsystem_components_efficiency, subsystem_components_efficiency_table, subsystem_components]
+  - [failure_modes_detectors, failure_modes_detectors_table, failure_modes]
+  - [cause, cause_table, hazard]
+  - [cause, cause_table, sub_requirement]
+  - [risk, risk_table, cause]
+  - [risk, risk_table, hazard]
+  - [failure_modes_detectors_efficiency, failure_modes_detectors_efficiency_table,
+    failure_modes_detectors]
+  - [hazard, hazard_table, sub_requirement]
+  - [failure_mitigation_efficiency, failure_mitigation_efficiency_table, failure_mitigation]
+  - [failure_mitigation_efficiency, failure_mitigation_efficiency_table, failure_modes]
+Placeholder Mapping:
+    cause:
+      - [mitigation_table, cause]
+      - [cause_table, cause]
+      - [risk_table, cause]
+    design_documents:
+      - [design_documents_table, design_documents]
+    failure_mitigation:
+      - [failure_mitigation_table, failure_mitigation]
+      - [failure_mitigation_efficiency_table, failure_mitigation]
+    failure_mitigation_efficiency:
+      - [failure_mitigation_efficiency_table, failure_mitigation_efficiency]
+    failure_modes:
+      - [failure_mitigation_table, failure_modes]
+      - [failure_modes_table, failure_modes]
+      - [failure_modes_detectors_table, failure_modes]
+      - [failure_mitigation_efficiency_table, failure_modes]
+    failure_modes_detectors:
+      - [failure_modes_detectors_table, failure_modes_detectors]
+      - [failure_modes_detectors_efficiency_table, failure_modes_detectors]
+    failure_modes_detectors_efficiency:
+      - [failure_modes_detectors_efficiency_table, failure_modes_detectors_efficiency]
+    hazard:
+      - [mitigation_table, hazard]
+      - [cause_table, hazard]
+      - [risk_table, hazard]
+      - [hazard_table, hazard]
+    hazard_documents:
+      - [hazard_documents_table, hazard_documents]
+    hazard_list:
+      - [hazard_list_table, hazard_list]
+    highlevel_requirement:
+      - [sub_requirement_table, highlevel_requirement]
+      - [highlevel_requirement_table, highlevel_requirement]
+    mitigation:
+      - [mitigation_table, mitigation]
+    operating_condition:
+      - [operating_condition_table, operating_condition]
+    operating_environment:
+      - [operating_environment_table, operating_environment]
+    related_components:
+      - [related_components_table, related_components]
+    requirement_documents:
+      - [requirement_documents_table, requirement_documents]
+    risk:
+      - [risk_table, risk]
+    sub_requirement:
+      - [related_components_table, sub_requirement]
+      - [sub_requirement_table, sub_requirement]
+      - [cause_table, sub_requirement]
+      - [hazard_table, sub_requirement]
+    subsystem:
+      - [subsystem_table, subsystem]
+      - [subsystem_components_table, subsystem]
+    subsystem_components:
+      - [subsystem_components_redundancy_table, subsystem_components]
+      - [failure_modes_table, subsystem_components]
+      - [subsystem_components_table, subsystem_components]
+      - [subsystem_components_efficiency_table, subsystem_components]
+    subsystem_components_efficiency:
+      - [subsystem_components_efficiency_table, subsystem_components_efficiency]
+    subsystem_components_redundancy:
+      - [subsystem_components_redundancy_table, subsystem_components_redundancy]
+    system:
+      - [subsystem_table, system]
+      - [system_goals_table, system]
+      - [system_table, system]
+    system_goals:
+      - [system_goals_table, system_goals]
+      - [system_requirement_table, system_goals]
+    system_model_documents:
+      - [system_model_documents_table, system_model_documents]
+    system_requirement:
+      - [system_requirement_table, system_requirement]
+      - [highlevel_requirement_table, system_requirement]

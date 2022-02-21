@@ -1,0 +1,572 @@
+{
+      "metadata": {
+            "system": "AV_system",
+            "design_documents": [],
+            "requirement_documents": [
+                  "Requirements_source1.pdf"
+            ],
+            "hazard_documents": [
+                  "Resonate.pdf"
+            ],
+            "system_model_documents": [
+                  "Resonate.pdf"
+            ]
+      },
+      "Info": [
+            {
+                  "1.0": {
+                        "ID": 1.0,
+                        "Class": "requirement",
+                        "Parent": 1.0,
+                        "Specification": "Waypoint calculation",
+                        "system_requirement": "functional",
+                        "system_goals": "The vehicle shall safely navigate between the designated source and destination",
+                        "Causes": [
+                              "nan"
+                        ],
+                        "related_components": [
+                              "nan"
+                        ],
+                        "Hazard": [
+                              "nan"
+                        ]
+                  },
+                  "1.1": {
+                        "ID": 1.1,
+                        "Class": "sub-requirement",
+                        "Parent": 1.0,
+                        "Specification": "The calculated waypoints shall be in the direction towards the destination",
+                        "system_requirement": "nan",
+                        "system_goals": "nan",
+                        "Causes": [
+                              "error in accessing CARLA map",
+                              "error in predictions of the navigation lec",
+                              "left camera occluded by dust or snow",
+                              "center camera occluded by dust or snow",
+                              "right camera occluded by dust or snow",
+                              "left camera blurred by fog or rain",
+                              "center camera blurred by fog or rain",
+                              "right camera blurred by fog or rain",
+                              "incorrect GPS measurements",
+                              "incorrect IMU readings"
+                        ],
+                        "related_components": [
+                              "navigation",
+                              "Camera",
+                              "IMU",
+                              "GPS"
+                        ],
+                        "Hazard": [
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "error in accessing CARLA map",
+                                    "mitigation": "nan",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Low"
+                              },
+                              {
+                                    "hazard": "inaccurate speed value",
+                                    "cause": "error in predictions of the navigation lec",
+                                    "mitigation": "navigation lec trained on diverse image dataset",
+                                    "consequence": "collision with object in front",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "error in predictions of the navigation lec",
+                                    "mitigation": "navigation lec trained on diverse image dataset",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "occluded image",
+                                    "cause": "left camera occluded by dust or snow",
+                                    "mitigation": "left_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "left camera occluded by dust or snow",
+                                    "mitigation": "left_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "left camera occluded by dust or snow",
+                                    "mitigation": "left_od",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "occluded image",
+                                    "cause": "center camera occluded by dust or snow",
+                                    "mitigation": "center_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "center camera occluded by dust or snow",
+                                    "mitigation": "center_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "center camera occluded by dust or snow",
+                                    "mitigation": "center_od",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "occluded image",
+                                    "cause": "right camera occluded by dust or snow",
+                                    "mitigation": "right_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "right camera occluded by dust or snow",
+                                    "mitigation": "right_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "right camera occluded by dust or snow",
+                                    "mitigation": "right_od",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "blur image ",
+                                    "cause": "left camera blurred by fog or rain",
+                                    "mitigation": "left_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "left camera blurred by fog or rain",
+                                    "mitigation": "left_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "left camera blurred by fog or rain",
+                                    "mitigation": "left_bd",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "blur image",
+                                    "cause": "center camera blurred by fog or rain",
+                                    "mitigation": "center_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "center camera blurred by fog or rain",
+                                    "mitigation": "center_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "center camera blurred by fog or rain",
+                                    "mitigation": "center_bd",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "blur image",
+                                    "cause": "right camera blurred by fog or rain",
+                                    "mitigation": "right_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "right camera blurred by fog or rain",
+                                    "mitigation": "right_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "right camera blurred by fog or rain",
+                                    "mitigation": "right_bd",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "inaccurate speed value",
+                                    "cause": "incorrect GPS measurements",
+                                    "mitigation": "nan",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "incorrect GPS measurements",
+                                    "mitigation": "nan",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "incorrect IMU readings",
+                                    "mitigation": "nan",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              }
+                        ]
+                  },
+                  "1.2": {
+                        "ID": 1.2,
+                        "Class": "sub-requirement",
+                        "Parent": 1.0,
+                        "Specification": "The distance between two subsequent waypoints will be 5 meters",
+                        "system_requirement": "nan",
+                        "system_goals": "nan",
+                        "Causes": [
+                              "error in accessing CARLA map",
+                              "error in predictions of the navigation lec",
+                              "left camera occluded by dust or snow",
+                              "center camera occluded by dust or snow",
+                              "right camera occluded by dust or snow",
+                              "left camera blurred by fog or rain",
+                              "center camera blurred by fog or rain",
+                              "right camera blurred by fog or rain",
+                              "incorrect GPS measurements",
+                              "incorrect IMU readings"
+                        ],
+                        "related_components": [
+                              "navigation",
+                              "Camera",
+                              "IMU",
+                              "GPS"
+                        ],
+                        "Hazard": [
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "error in accessing CARLA map",
+                                    "mitigation": "nan",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Low"
+                              },
+                              {
+                                    "hazard": "inaccurate speed value",
+                                    "cause": "error in predictions of the navigation lec",
+                                    "mitigation": "navigation lec trained on diverse image dataset",
+                                    "consequence": "collision with object in front",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "error in predictions of the navigation lec",
+                                    "mitigation": "navigation lec trained on diverse image dataset",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "occluded image",
+                                    "cause": "left camera occluded by dust or snow",
+                                    "mitigation": "left_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "left camera occluded by dust or snow",
+                                    "mitigation": "left_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "left camera occluded by dust or snow",
+                                    "mitigation": "left_od",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "occluded image",
+                                    "cause": "center camera occluded by dust or snow",
+                                    "mitigation": "center_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "center camera occluded by dust or snow",
+                                    "mitigation": "center_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "center camera occluded by dust or snow",
+                                    "mitigation": "center_od",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "occluded image",
+                                    "cause": "right camera occluded by dust or snow",
+                                    "mitigation": "right_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "right camera occluded by dust or snow",
+                                    "mitigation": "right_od",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "right camera occluded by dust or snow",
+                                    "mitigation": "right_od",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "blur image ",
+                                    "cause": "left camera blurred by fog or rain",
+                                    "mitigation": "left_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "left camera blurred by fog or rain",
+                                    "mitigation": "left_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "left camera blurred by fog or rain",
+                                    "mitigation": "left_bd",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "blur image",
+                                    "cause": "center camera blurred by fog or rain",
+                                    "mitigation": "center_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "center camera blurred by fog or rain",
+                                    "mitigation": "center_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "center camera blurred by fog or rain",
+                                    "mitigation": "center_bd",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "blur image",
+                                    "cause": "right camera blurred by fog or rain",
+                                    "mitigation": "right_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate steer value",
+                                    "cause": "right camera blurred by fog or rain",
+                                    "mitigation": "right_bd",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "right camera blurred by fog or rain",
+                                    "mitigation": "right_bd",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "inaccurate speed value",
+                                    "cause": "incorrect GPS measurements",
+                                    "mitigation": "nan",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "incorrect GPS measurements",
+                                    "mitigation": "nan",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              },
+                              {
+                                    "hazard": "inaccurate waypoints",
+                                    "cause": "incorrect IMU readings",
+                                    "mitigation": "nan",
+                                    "consequence": "failure to reach the destination",
+                                    "risk": "Medium"
+                              }
+                        ]
+                  }
+            },
+            {
+                  "2.0": {
+                        "ID": 2.0,
+                        "Class": "requirement",
+                        "Parent": 2.0,
+                        "Specification": "AEBS",
+                        "system_requirement": "safety",
+                        "system_goals": "The vehicle shall not damage itself or other actors in its path",
+                        "Causes": [
+                              "nan"
+                        ],
+                        "related_components": [
+                              "nan"
+                        ],
+                        "Hazard": [
+                              "nan"
+                        ]
+                  },
+                  "2.1": {
+                        "ID": 2.1,
+                        "Class": "sub-requirement",
+                        "Parent": 2.0,
+                        "Specification": "The vehicle shall accurately calculate the safe breaking distance",
+                        "system_requirement": "nan",
+                        "system_goals": "nan",
+                        "Causes": [
+                              "high rainy conditions"
+                        ],
+                        "related_components": [
+                              "AEBS",
+                              "RADAR",
+                              "Longitudinal PID calculator"
+                        ],
+                        "Hazard": []
+                  },
+                  "2.2": {
+                        "ID": 2.2,
+                        "Class": "sub-requirement",
+                        "Parent": 2.0,
+                        "Specification": "The vehicle shall apply hard brakes to stop at the safe breaking distance",
+                        "system_requirement": "nan",
+                        "system_goals": "nan",
+                        "Causes": [
+                              "rainy operating conditions causing brake to slip",
+                              "high rainy conditions"
+                        ],
+                        "related_components": [
+                              "AEBS",
+                              "RADAR",
+                              "Longitudinal PID calculator"
+                        ],
+                        "Hazard": [
+                              {
+                                    "hazard": "inaccurate speed value",
+                                    "cause": "rainy operating conditions causing brake to slip",
+                                    "mitigation": "nan",
+                                    "consequence": "system collision or route deviation",
+                                    "risk": "High"
+                              }
+                        ]
+                  }
+            },
+            {
+                  "3.0": {
+                        "ID": 3.0,
+                        "Class": "requirement",
+                        "Parent": 3.0,
+                        "Specification": "Detector Array",
+                        "system_requirement": "safety",
+                        "system_goals": "The vehicle shall not damage itself or other actors in its path",
+                        "Causes": [
+                              "nan"
+                        ],
+                        "related_components": [
+                              "nan"
+                        ],
+                        "Hazard": [
+                              "nan"
+                        ]
+                  },
+                  "3.1": {
+                        "ID": 3.1,
+                        "Class": "sub-requirement",
+                        "Parent": 3.0,
+                        "Specification": "The detector array should clearly indicate the specific conditions causing the alarm",
+                        "system_requirement": "nan",
+                        "system_goals": "nan",
+                        "Causes": [
+                              "detectors threshold not properly set"
+                        ],
+                        "related_components": [
+                              "left_bd",
+                              "right_bd",
+                              "center_bd",
+                              "left_od",
+                              "right_od",
+                              "center_od",
+                              "assurance monitor"
+                        ],
+                        "Hazard": []
+                  },
+                  "3.2": {
+                        "ID": 3.2,
+                        "Class": "sub-requirement",
+                        "Parent": 3.0,
+                        "Specification": "The detectors in the detector array shall atleast have a detection precision of 90 percent",
+                        "system_requirement": "nan",
+                        "system_goals": "nan",
+                        "Causes": [
+                              "detectors threshold not properly set"
+                        ],
+                        "related_components": [
+                              "left_bd",
+                              "right_bd",
+                              "center_bd",
+                              "left_od",
+                              "right_od",
+                              "center_od",
+                              "assurance monitor"
+                        ],
+                        "Hazard": []
+                  },
+                  "3.3": {
+                        "ID": 3.3,
+                        "Class": "sub-requirement",
+                        "Parent": 3.0,
+                        "Specification": "The detectors in the detector array shall compute its detection within the system inference time of 70 milliseconds",
+                        "system_requirement": "nan",
+                        "system_goals": "nan",
+                        "Causes": [
+                              "detectors threshold not properly set"
+                        ],
+                        "related_components": [
+                              "left_bd",
+                              "right_bd",
+                              "center_bd",
+                              "left_od",
+                              "right_od",
+                              "center_od",
+                              "assurance monitor"
+                        ],
+                        "Hazard": []
+                  }
+            }
+      ]
+}

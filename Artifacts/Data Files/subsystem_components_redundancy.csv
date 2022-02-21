@@ -1,0 +1,21 @@
+subsystem_components_redundancy,subsystem_components
+no,left_camera
+no,center_camera
+no,right_camera
+no,GPS
+no,IMU
+no,Speedometer
+no,left_radar
+no,center_radar
+no,navigation lec
+no,emergency_braking
+no,motion estimator
+no,lateral PID
+no,longitudinal PID
+no,left_bd
+no,center_bd
+no,right_bd
+no,left_od
+no,center_od
+no,right_od
+no,assurance monitor

@@ -1,0 +1,41 @@
+mitigation,cause,hazard
+navigation lec trained on diverse image dataset,error in predictions of the navigation lec,inaccurate speed value
+navigation lec trained on diverse image dataset,error in predictions of the navigation lec,inaccurate steer value
+left_od,left camera occluded by dust or snow,occluded image
+left_od,left camera occluded by dust or snow,inaccurate steer value
+left_od,left camera occluded by dust or snow,inaccurate waypoints
+center_od,center camera occluded by dust or snow,occluded image
+center_od,center camera occluded by dust or snow,inaccurate steer value
+center_od,center camera occluded by dust or snow,inaccurate waypoints
+right_od,right camera occluded by dust or snow,occluded image
+right_od,right camera occluded by dust or snow,inaccurate steer value
+right_od,right camera occluded by dust or snow,inaccurate waypoints
+left_bd,left camera blurred by fog or rain,blur image 
+left_bd,left camera blurred by fog or rain,inaccurate steer value
+left_bd,left camera blurred by fog or rain,inaccurate waypoints
+center_bd,center camera blurred by fog or rain,blur image
+center_bd,center camera blurred by fog or rain,inaccurate steer value
+center_bd,center camera blurred by fog or rain,inaccurate waypoints
+right_bd,right camera blurred by fog or rain,blur image
+right_bd,right camera blurred by fog or rain,inaccurate steer value
+right_bd,right camera blurred by fog or rain,inaccurate waypoints
+navigation lec trained on diverse image dataset,error in predictions of the navigation lec,inaccurate speed value
+navigation lec trained on diverse image dataset,error in predictions of the navigation lec,inaccurate steer value
+left_od,left camera occluded by dust or snow,occluded image
+left_od,left camera occluded by dust or snow,inaccurate steer value
+left_od,left camera occluded by dust or snow,inaccurate waypoints
+center_od,center camera occluded by dust or snow,occluded image
+center_od,center camera occluded by dust or snow,inaccurate steer value
+center_od,center camera occluded by dust or snow,inaccurate waypoints
+right_od,right camera occluded by dust or snow,occluded image
+right_od,right camera occluded by dust or snow,inaccurate steer value
+right_od,right camera occluded by dust or snow,inaccurate waypoints
+left_bd,left camera blurred by fog or rain,blur image 
+left_bd,left camera blurred by fog or rain,inaccurate steer value
+left_bd,left camera blurred by fog or rain,inaccurate waypoints
+center_bd,center camera blurred by fog or rain,blur image
+center_bd,center camera blurred by fog or rain,inaccurate steer value
+center_bd,center camera blurred by fog or rain,inaccurate waypoints
+right_bd,right camera blurred by fog or rain,blur image
+right_bd,right camera blurred by fog or rain,inaccurate steer value
+right_bd,right camera blurred by fog or rain,inaccurate waypoints

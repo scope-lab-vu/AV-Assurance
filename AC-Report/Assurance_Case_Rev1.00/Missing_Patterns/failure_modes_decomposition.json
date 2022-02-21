@@ -1,0 +1,95 @@
+{
+      "pattern": {
+            "nodes": [
+                  {
+                        "class": "goal",
+                        "identifier": "G0",
+                        "content": "{fm} is satisfactorily satisfied",
+                        "modifiers": [
+                              "instantiate"
+                        ],
+                        "multiplicity": [],
+                        "is_defeater": false
+                  },
+                  {
+                        "class": "goal",
+                        "identifier": "G1",
+                        "content": "{fm} is satisfactorily satisfied",
+                        "modifiers": [
+                              "instantiate"
+                        ],
+                        "multiplicity": [],
+                        "is_defeater": false
+                  },
+                  {
+                        "class": "goal",
+                        "identifier": "G2",
+                        "content": "{fmd} is satisfactorily satisfied",
+                        "modifiers": [
+                              "instantiate"
+                        ],
+                        "multiplicity": [],
+                        "is_defeater": false
+                  },
+                  {
+                        "class": "evidence",
+                        "identifier": "E3",
+                        "content": "{fme} is satisfactorily satisfied",
+                        "modifiers": [
+                              "instantiate"
+                        ],
+                        "multiplicity": [],
+                        "is_defeater": false
+                  },
+                  {
+                        "class": "evidence",
+                        "identifier": "E4",
+                        "content": "{fmde} is satisfactorily satisfied",
+                        "modifiers": [
+                              "instantiate"
+                        ],
+                        "multiplicity": [],
+                        "is_defeater": false
+                  }
+            ],
+            "links": [
+                  {
+                        "source": "failure_mitigation",
+                        "target": "failure_mitigation_efficiency"
+                  },
+                  {
+                        "source": "failure_modes",
+                        "target": "failure_mitigation"
+                  },
+                  {
+                        "source": "failure_modes",
+                        "target": "failure_modes_detectors"
+                  },
+                  {
+                        "source": "failure_modes",
+                        "target": "failure_mitigation_efficiency"
+                  },
+                  {
+                        "source": "failure_modes_detectors",
+                        "target": "failure_modes_detectors_efficiency"
+                  }
+            ]
+      },
+      "metadata": {
+            "count": 0,
+            "level": 0,
+            "name": "failure_modes_decomposition",
+            "num_instances": 0,
+            "num_variants": 0,
+            "parents": {},
+            "children": {},
+            "placeholders": {
+                  "failure_modes_detectors_efficiency": "fmde",
+                  "failure_mitigation_efficiency": "fme",
+                  "failure_modes_detectors": "fmd",
+                  "failure_mitigation": "fm",
+                  "failure_modes": "fm"
+            },
+            "rating": 0.0
+      }
+}

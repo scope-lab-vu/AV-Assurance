@@ -1,0 +1,36 @@
+related_components,sub_requirement
+navigation,The calculated waypoints shall be in the direction towards the destination
+Camera,The calculated waypoints shall be in the direction towards the destination
+IMU,The calculated waypoints shall be in the direction towards the destination
+GPS,The calculated waypoints shall be in the direction towards the destination
+navigation,The distance between two subsequent waypoints will be 5 meters
+Camera,The distance between two subsequent waypoints will be 5 meters
+IMU,The distance between two subsequent waypoints will be 5 meters
+GPS,The distance between two subsequent waypoints will be 5 meters
+AEBS,The vehicle shall accurately calculate the safe breaking distance
+RADAR,The vehicle shall accurately calculate the safe breaking distance
+Longitudinal PID calculator,The vehicle shall accurately calculate the safe breaking distance
+AEBS,The vehicle shall apply hard brakes to stop at the safe breaking distance
+RADAR,The vehicle shall apply hard brakes to stop at the safe breaking distance
+Longitudinal PID calculator,The vehicle shall apply hard brakes to stop at the safe breaking distance
+left_bd,The detector array should clearly indicate the specific conditions causing the alarm
+right_bd,The detector array should clearly indicate the specific conditions causing the alarm
+center_bd,The detector array should clearly indicate the specific conditions causing the alarm
+left_od,The detector array should clearly indicate the specific conditions causing the alarm
+right_od,The detector array should clearly indicate the specific conditions causing the alarm
+center_od,The detector array should clearly indicate the specific conditions causing the alarm
+assurance monitor,The detector array should clearly indicate the specific conditions causing the alarm
+left_bd,The detectors in the detector array shall atleast have a detection precision of 90 percent
+right_bd,The detectors in the detector array shall atleast have a detection precision of 90 percent
+center_bd,The detectors in the detector array shall atleast have a detection precision of 90 percent
+left_od,The detectors in the detector array shall atleast have a detection precision of 90 percent
+right_od,The detectors in the detector array shall atleast have a detection precision of 90 percent
+center_od,The detectors in the detector array shall atleast have a detection precision of 90 percent
+assurance monitor,The detectors in the detector array shall atleast have a detection precision of 90 percent
+left_bd,The detectors in the detector array shall compute its detection within the system inference time of 70 milliseconds
+right_bd,The detectors in the detector array shall compute its detection within the system inference time of 70 milliseconds
+center_bd,The detectors in the detector array shall compute its detection within the system inference time of 70 milliseconds
+left_od,The detectors in the detector array shall compute its detection within the system inference time of 70 milliseconds
+right_od,The detectors in the detector array shall compute its detection within the system inference time of 70 milliseconds
+center_od,The detectors in the detector array shall compute its detection within the system inference time of 70 milliseconds
+assurance monitor,The detectors in the detector array shall compute its detection within the system inference time of 70 milliseconds

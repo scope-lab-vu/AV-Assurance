@@ -1,0 +1,8 @@
+failure_modes,subsystem_components
+left_cam_blur,left_camera
+center_cam_blur,right_camera
+right_cam_blur,center_camera
+left_cam_occlusion,left_camera
+center_cam_occlusion,right_camera
+right_cam_occlusion,center_camera
+data_shift,navigation lec

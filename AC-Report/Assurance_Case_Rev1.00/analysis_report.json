@@ -1,0 +1,47 @@
+{
+      "System": "AV_system",
+      "Selected Templates": [
+            "Requirement_component_dependancy.json",
+            "Requirement_hazard_decomposition.json",
+            "System_goal_decomposition1.json",
+            "System_architecture_decomposition.json"
+      ],
+      "Unused Templates": [
+            {
+                  "Component_failure_modes.json": [
+                        {
+                              "placeholder": "failure_modes_detector_efficiency",
+                              "missing from": "data_mapping_file",
+                              "identifier": [
+                                    "E1"
+                              ]
+                        }
+                  ]
+            }
+      ],
+      "Artifacts Unused": [
+            "requirement_documents",
+            "failure_mitigation",
+            "failure_modes",
+            "system_model_documents",
+            "failure_modes_detectors_efficiency",
+            "failure_mitigation_efficiency",
+            "failure_modes_detectors"
+      ],
+      "Artifact Coverage": "73.08%",
+      "Safety Data Coverage": [
+            {
+                  "hazard_information": {
+                        "Inclusion score": 60.0,
+                        "Mitigation score": 81.63
+                  }
+            },
+            {
+                  "failure_modes_information": {
+                        "Inclusion score": 100.0,
+                        "Mitigation score": 100.0
+                  }
+            }
+      ],
+      "Version": 1.0
+}

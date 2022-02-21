@@ -1,0 +1,21 @@
+subsystem,system
+sensing subsystem,AV_system
+sensing subsystem,AV_system
+sensing subsystem,AV_system
+sensing subsystem,AV_system
+sensing subsystem,AV_system
+sensing subsystem,AV_system
+sensing subsystem,AV_system
+sensing subsystem,AV_system
+control subsystem,AV_system
+control subsystem,AV_system
+control subsystem,AV_system
+actuator subsystem,AV_system
+actuator subsystem,AV_system
+detector subsystem,AV_system
+detector subsystem,AV_system
+detector subsystem,AV_system
+detector subsystem,AV_system
+detector subsystem,AV_system
+detector subsystem,AV_system
+detector subsystem,AV_system

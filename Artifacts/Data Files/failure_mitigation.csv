@@ -1,0 +1,8 @@
+failure_mitigation,failure_modes
+emergency braking,left_cam_blur
+emergency braking,center_cam_blur
+emergency braking,right_cam_blur
+emergency braking,left_cam_occlusion
+emergency braking,center_cam_occlusion
+emergency braking,right_cam_occlusion
+emergency braking,data_shift

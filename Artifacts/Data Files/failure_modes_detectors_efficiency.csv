@@ -1,0 +1,8 @@
+failure_modes_detectors_efficiency,failure_modes_detectors
+80.4%,left_bd
+99.2%,center_bd
+100%,right_bd
+100%,left_od
+100%,center_od
+100%,right_od
+93.2%,assurance_monitor

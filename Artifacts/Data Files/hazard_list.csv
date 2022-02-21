@@ -1,0 +1,34 @@
+hazard_list,Cause,Mitigation,Consequence,Likelihood,Severity,initial_risk
+roadway obstruction,pedestrian in path of travel,emergency_braking,collision with roadway obstruction,probable,major,High
+roadway obstruction,other vehicle in path of travel,emergency_braking,collision with roadway obstruction,probable,major,High
+inaccurate speed value,error in predictions of the navigation lec,navigation lec trained on diverse image dataset,collision with object in front,remote,hazardous,High
+inaccurate speed value,incorrect speedometer reading,,system collision or route deviation,probable,major,High
+inaccurate speed value,incorrect GPS measurements,,system collision or route deviation,probable,major,High
+inaccurate speed value,rainy operating conditions causing brake to slip,,system collision or route deviation,probable,major,High
+occluded image,left camera occluded by dust or snow,left_od,system collision or route deviation,probable,major,High
+occluded image,center camera occluded by dust or snow,center_od,system collision or route deviation,probable,major,High
+occluded image,right camera occluded by dust or snow,right_od,system collision or route deviation,probable,major,High
+blur image ,left camera blurred by fog or rain,left_bd,system collision or route deviation,probable,hazardous,High
+blur image,right camera blurred by fog or rain,right_bd,system collision or route deviation,probable,hazardous,High
+blur image,center camera blurred by fog or rain,center_bd,system collision or route deviation,probable,hazardous,High
+false detection,detectors threshold not properly set ,,system collision,probable,major,High
+failure to detect,detectors threshold not properly set ,,system collision,probable,major,High
+inaccurate steer value,error in predictions of the navigation lec,navigation lec trained on diverse image dataset,system collision or route deviation,probable,major,High
+inaccurate steer value,left camera occluded by dust or snow,left_od,system collision or route deviation,probable,major,High
+inaccurate steer value,center camera occluded by dust or snow,center_od,system collision or route deviation,probable,major,High
+inaccurate steer value,right camera occluded by dust or snow,right_od,system collision or route deviation,probable,major,High
+inaccurate steer value,left camera blurred by fog or rain,left_bd,system collision or route deviation,probable,major,High
+inaccurate steer value,right camera blurred by fog or rain,right_bd,system collision or route deviation,probable,major,High
+inaccurate steer value,center camera blurred by fog or rain,center_bd,system collision or route deviation,probable,major,High
+inaccurate steer value, bright operating conditions,assurance monitor,system collision or route deviation,probable,major,High
+inaccurate steer value,new operating conditions,assurance monitor,system collision or route deviation,probable,major,High
+radar signal error,heavy rain conditions,,emergency braking fails,probable,hazardous,High
+inaccurate waypoints,left camera occluded by dust or snow,left_od,failure to reach the destination,probable,minor,Medium
+inaccurate waypoints,center camera occluded by dust or snow,center_od,failure to reach the destination,probable,minor,Medium
+inaccurate waypoints,right camera occluded by dust or snow,right_od,failure to reach the destination,probable,minor,Medium
+inaccurate waypoints,left camera blurred by fog or rain,left_bd,failure to reach the destination,probable,minor,Medium
+inaccurate waypoints,right camera blurred by fog or rain,right_bd,failure to reach the destination,probable,minor,Medium
+inaccurate waypoints,center camera blurred by fog or rain,center_bd,failure to reach the destination,probable,minor,Medium
+inaccurate waypoints,incorrect GPS measurements,,failure to reach the destination,remote,minor,Medium
+inaccurate waypoints,incorrect IMU readings,,failure to reach the destination,remote,minor,Medium
+inaccurate waypoints,error in accessing CARLA map,,failure to reach the destination,extremely remote,minor,Low

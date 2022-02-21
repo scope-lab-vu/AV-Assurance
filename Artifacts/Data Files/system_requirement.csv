@@ -1,0 +1,4 @@
+system_requirement,system_goals
+functional,The vehicle shall safely navigate between the designated source and destination
+safety,The vehicle shall not damage itself or other actors in its path
+safety,The vehicle shall not damage itself or other actors in its path

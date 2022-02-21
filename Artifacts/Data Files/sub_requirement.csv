@@ -1,0 +1,8 @@
+sub_requirement,highlevel_requirement
+The calculated waypoints shall be in the direction towards the destination,Waypoint calculation
+The distance between two subsequent waypoints will be 5 meters,Waypoint calculation
+The vehicle shall accurately calculate the safe breaking distance,AEBS
+The vehicle shall apply hard brakes to stop at the safe breaking distance,AEBS
+The detector array should clearly indicate the specific conditions causing the alarm,Detector Array
+The detectors in the detector array shall atleast have a detection precision of 90 percent,Detector Array
+The detectors in the detector array shall compute its detection within the system inference time of 70 milliseconds,Detector Array
